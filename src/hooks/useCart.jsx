@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useAuthContext } from '../context/AuthContext';
-import { addOrUpdateToCart, removeFromCart } from '../api/firebase';
+import { addOrUpdateToCart, removeFromCart, getCart } from '../api/firebase';
 
 export default function useCart() {
   const { uid } = useAuthContext();
